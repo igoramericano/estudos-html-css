@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+
+    <style>
+        /* 
+        # = id
+        . = classe
+        : = pseudo-classe
+        :: = pseudo-elemento
+        :hover = quando passa o mouse por cima do link
+        :active = quando clica no link
+        :visited = quando clica no link
+        :link = quando não clica no link
+        :before = antes do elemento
+        :after = depois do elemento
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        
+        }
+        a {
+            color: purple; /*cor do texto do link*/
+            font-weight: bold; /*negrito*/
+                }
+        
+        a:visited {
+            color:darkred; /*cor do texto do link visitado*/
+            text-decoration: none; /*remove o sublinhado do link*/
+        }
+
+        a:hover {
+            color: black   ; /*cor do texto do link quando o mouse passa por cima*/
+            text-decoration: underline; /*sublinha o texto do link quando o mouse passa por cima*/
+        }
+
+        a:active {
+            color: yellow; /*cor do texto do link quando clica*/
+        }
+
+        a::after {
+            content: '-->(link)<-'; /*adiciona o texto (link) após o link*/
+            text-decoration: underline; /*sublinha o texto (link)*/
+            color: grey; /*cor do texto (link)*/
+        }
+
+        .especial {
+            color: purple;
+            background-color: gray; /*cor de fundo do link*/
+            font-weight: bold; /*negrito*/
+
+        }
+
+        
+        .especial::before {
+            color: green;
+            background-color: gray; /*cor de fundo do link*/
+            font-weight: bold; /*negrito*/
+
+        }
+
+        .especial::after {
+
+            content:'(link)'; /*adiciona o texto (link) após o link*/
+            color: darkred;
+            background-color: white; /*cor de fundo do link*/
+            font-weight: extra-bold; /*negrito*/
+            text-decoration: none; /*remove o sublinhado do link*/
+        }
+
+
+
+    </style>
+
+    <!-- a:visited: interação quando clica -->
+    <!--a:hover: interação quando passa o mouse por cima-->
+
+
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li class="especial"><a href="https://gustavoguanabara.github.io"  target="_blank">Repositório GITHUB</a></li>
+        <li><a href="https://youtube.com/CursoEmVideo" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.CursoEmVideo.com" target="_blank">Site do CursoEmVideo</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de caixas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            color: black;
+        }
+
+        h1 {
+        
+            /*box level*/
+            color: blue;
+            width: 350px;
+            height: 125px;
+            border: 10px solid rgb(125, 125, 45); /*width style color*/
+            padding: 10px 10px 10px 10px; /*top right bottom left*/
+            margin: 10px 10px 10px 10px; /*top right bottom left*/
+            outline: 5px dashed rgb(125, 125, 45); /*width style color*/
+            
+        }
+        p {
+            color: black;
+            padding-left: 10px;
+
+        }
+
+        a { /*in-line level*/
+
+            border: 10px;
+            color: blue;
+            text-decoration: none;
+            display: block; /*transforma o link em bloco*/
+        }
+
+        a:hover {
+            color: darkred;
+            text-decoration: underline;
+            border: 10px solid rgb(125, 125, 45);
+                
+        }
+
+       
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa <br> BOX-LEVEL</h1>
+
+    <p>passe o mouse para exibir exemplo de caixa box-level</p>
+
+    <p>Exemplo de caixa <a href="https://youtube.com" target="_blank">BOX-LEVEL</a></p>
+</body>
+</html>

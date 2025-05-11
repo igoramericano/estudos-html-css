@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Love Larry'; Arial, sans-serif;
+    src: url(fonts/love\ larry\ ttf.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Kaushan+Script&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1 {
+    font-family: 'Love Larry'; Arial, sans-serif;
+    font-size: 2em;
+    color: #FF0000;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+h2 {
+    font-family: 'Love Larry'; Arial, sans-serif;
+    font-size: 1.5em;
+    color: #FF0000;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+p {
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+    color: #000000;
+    text-align: center;
+    text-shadow: 1px 1px 2px #FFFFFF;
+}

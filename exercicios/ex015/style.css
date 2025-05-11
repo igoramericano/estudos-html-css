@@ -1,0 +1,28 @@
+@charset "UTF-8"; /* É uma regra de codificação de caracteres UTF-8 */
+/* Definindo o estilo para o corpo da página */
+body
+    {
+        background-color: lightgoldenrodyellow  /* Cor de fundo da página */
+        font-family: Arial, sans-serif; /* Fonte do texto */
+        font-size: 20px; /* Tamanho da fonte */
+        color: black; /* Cor do texto */
+    } 
+
+    h1
+    {
+        color: maroon /* Cor do texto */
+        background-color: lightgoldenrodyellow; /* Cor de fundo do cabeçalho */ 
+        
+    } 
+
+    h2
+    {
+        color: maroon
+        background-color:  lightgoldenrodyellow;    /* Cor de fundo do subtítulo */
+    }
+
+    p
+    {
+        color: black; /* Cor do texto */
+        background-color: lightgoldenrodyellow;     /* Cor de fundo do parágrafo */
+    }

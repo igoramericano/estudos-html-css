@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 009</title>
+    <style>
+        .video-container {
+            display: none;
+            text-align: center;
+        }
+        .thumbnail-container {
+            text-align: center;
+        }
+        img {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="thumbnail-container" id="thumbnail-container">
+        <h1>Desafio 009</h1>
+        <p>Faça 4 imagens e coloque o link para acessar cada um dos vídeos, com botão de voltar</p>
+        <div>
+            <img src="imagens/thumb-hardware.png" alt="Video 1" style="width:200px;height:auto" onclick="showVideo('https://www.youtube.com/embed/dicsAJm3Lvk')">
+            <img src="imagens/thumb-html.png" alt="Video 2" style="width:200px;height:auto;" onclick="showVideo('https://www.youtube.com/embed/e0mHVk8-wX4')">
+            <img src="imagens/thumb-js.png" alt="Video 3" style="width:200px;height:auto;" onclick="showVideo('https://www.youtube.com/embed/grfxhXsl3n4')">
+            <img src="imagens/thumb-python.png" alt="Video 4" style="width:200px;height:auto;" onclick="showVideo('https://www.youtube.com/embed/RzUrTRIq1jk')">
+        </div>
+    </div>
+    <div class="video-container" id="video-container">
+        <iframe id="video-frame" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+        <br>
+        <button onclick="goBack()">Voltar</button>
+    </div>
+
+    <script>
+        function showVideo(videoUrl) {
+            document.getElementById('thumbnail-container').style.display = 'none';
+            document.getElementById('video-container').style.display = 'block';
+            document.getElementById('video-frame').src = videoUrl;
+        }
+
+        function goBack() {
+            document.getElementById('video-container').style.display = 'none';
+            document.getElementById('thumbnail-container').style.display = 'block';
+            document.getElementById('video-frame').src = '';
+        }
+    </script>
+</body>
+</html>
