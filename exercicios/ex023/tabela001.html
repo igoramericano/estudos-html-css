@@ -14,30 +14,42 @@
             color: blue;
             text-transform: uppercase;
             text-shadow: 1px;
+            text-align: left;
+            margin-left: 100px;
+        }
+
+        table {
+            
+            border: 1px solid blue;
+            border-radius: 3.5px;
+            padding: 5px;
+            margin: 5px;
+            width: 450px;
+            height: 450px;
         }
 
         td {
             border: 1px solid blue;
             border-radius: 3.5px;
+            text-align: center;
+            vertical-align: middle;
         }
 
-        table {
-            border: 1px solid blue;
-            border-radius: 3.5px;
-            padding: 5px;
-            margin: 5px;
-            width: 250px;
+        .numero {
+            text-align: left;
+            color: #000000;
         }
 
-        tr.linha2 {
-            color: red;
-            background-color: #000;
-        }
+       
 
-        td.dado {
-            background-color: rgb(255, 0, 0);
-            color: #000;
-        }
+        /* Quando usar cada um?
+            - Use `text-align`para alinhar horizontalmente (esquerda, centro, direita) textos ou elementos inline.
+            - Use `vertical-align` para alinhar verticalmente conteúdos em células de tabela ou elementos inline (como imagens ao lado de texto).
+
+            **Dica:** Em layouts modernos com Flexbox ou Grid, o alinhamento vertical/horizontal é feito de outras formas, mas em tabelas, `text-align` e `vertical-align` ainda são essenciais.*/
+
+
+        
     </style>
 </head>
 <body>
@@ -54,16 +66,16 @@
             <td>C1</td>
         </tr> 
 
-        <tr class="linha2">
+        <tr>
             <td>A2</td>
-            <td class="dado">B2</td>
-            <td>C2</td>
+            <td>B2</td>
+            <td class="numero">C2</td>
         </tr>
 
         <tr>
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">C3</td>
         </tr>
 
         <tr>
@@ -73,19 +85,6 @@
             
         </tr>
 
-        <tr>
-            <td>A5</td>
-            <td>B5</td>
-        </tr>
-        <tr>
-            <td>A6</td>
-        </tr>
-
-        <tr>
-            <td>A7</td>
-            <td>B7</td>
-            <td>C7</td>
-        </tr>
     </table>
 </body>
 </html>
