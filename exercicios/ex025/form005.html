@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário e botões novos</title>
+</head>
+<body>
+
+    <h1>Exemplo de formulário</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+
+        <fieldset>  <!--RADIO BUTTON-->
+           
+            <legend>Lado favorito</legend>
+
+            <input type="radio" name="1CT" id="Ct"> <label for="CT">Contra-Terrorista</label> <br>
+
+            <input type="radio" name="1CT" id="TR" checked> <label for="TR">Terrorista</label> <br>
+
+            <!--colocar o mesmo "name" nos botões de radio faz com que não possa selecionar mais de 1 -->
+
+        </fieldset>
+ 
+        <fieldset>  <!--CHECK BOX-->
+            <legend>mapas de CS favoritos</legend>
+            
+            <input type="checkbox" name="de_mirage" id="mirage"> <label for="Mirage">Mirage</label> <br>
+
+            <input type="checkbox" name="de_nuke" id="nuke" checked> <label for="Nuke">Nuke</label> <br>
+
+            <input type="checkbox" name="de_dust2" id="dust2"> <label for="Dust2">Dust2</label> <br>
+
+            <input type="checkbox" name="hs_office" id="office"> <label for="Office">Office</label> <br>
+
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>    
+</body>
+</html>
