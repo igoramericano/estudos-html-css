@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários de telefone e E-mail</title>
+</head>
+<body>
+    <h1>exemplo de formulário</h1>
+
+<form action="cadastro.php" method="get" autocomplete="on">
+    <fieldset>
+        <legend id="1">dados pessoais</legend>
+            <div>
+                <p>
+                   <label for="email">Email</label>
+                    <input type="email" name="email1" id="email" autocomplete="email" required placeholder="seuemail@email.com">
+        
+                </p>
+            </div>
+        
+            <div>
+                <p>
+                    <label for="Tel">Telefone</label>
+                    <input type="tel" name="Tel1" id="Tel" autocomplete="tel" pattern="\d{4,8}" required placeholder="(xx)xxxxx-xxxx">
+                </p>
+            </div>
+        
+    </fieldset>
+        <div>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </div>
+</form>
+</body>
+</html>
