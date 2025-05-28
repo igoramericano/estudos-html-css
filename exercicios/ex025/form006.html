@@ -6,7 +6,30 @@
     <title>Formulário e mais botões novos</title>
 </head>
 <body>
-    <h1>Exemplo de outro formulário</h1>
-    
+<h1>Exemplo de outro formulário</h1>
+
+<form action="cadastro.php" method="get" autocomplete="on">
+    <div>
+        <!--BOTÃO DE COR-->
+        <label for="cor">Cor:</label>
+        <input type="color" name="1Cor" id="cor" value="#00ff00">
+    </div>
+    <div>
+        <!--BARRINHA (0-100 LATERAL)-->
+        <label for="1Nivel">Nivel de Satisfação:</label>
+        <input type="range" name="Nivel" id="1Nivel">
+    </div>
+    <div>
+        <!--BOTÃO ENVIAR ARQUIVO-->
+        <label for="1Foto">Foto:</label>
+        <input type="file" name="Foto" id="1Foto">
+    </div>
+    <div>
+        <!--BOTÕES DE ENVIAR E LIMPAR-->
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </div>
+</form>
+
 </body>
 </html>

@@ -8,42 +8,76 @@
 <body>
     <h1>Teste de formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
-    
+    <!--CAIXA DE NOME-->
     <div>
-        <p>
+        <label for="User">Nome</label>
+        <input type="text" name="User1" id="User" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
+    </div>
+
+    <!--CAIXA DE NUMERO-->
+    <div>
+        <label for="media">Média</label>
+        <input type="number" name="media1" id="media" min="0" max="10" placeholder="de 0 a 10" step="0.5">
+    </div>
+
+    <!--SELETOR DE MES/ANO-->
+    <div>
+        <label for="mes">Período Letivo</label>
+        <input type="month" name="mes1" id="mes">
+    </div>
+
+    <!--SELETOR DE DIA/MES/ANO-->
+    <div>
+        <label for="Dia">Dia da Prova</label>
+        <input type="date" name="Dia1" id="Dia">
+    </div>
+
+    <!--SELETOR DE HORA-->
+    <div>
+        <label for="Hora">Horario da Prova</label>
+        <input type="time" name="Hora1" id="Hora">
+    </div>
+
+    <!--BOTÕES DE ENVIAR E LIMPAR-->
+    <div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </div>
+    <div>
+        <p> <!--CAIXA DE NOME-->
             <label for="User">Nome</label>
             <input type="text" name="User1" id="User" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
         </p>
     </div>
     
     <div>
-        <p>
+        <p> <!--CAIXA DE NUMERO-->
             <label for="media">Média</label>
             <input type="number" name="media1" id="media" min="0" max="10" placeholder="de 0 a 10" step="0.5">
         </p>
     </div>
 
     <div>
-        <p>
+        <p> <!--SELETOR DE MES/ANO-->
             <label for="mes">Período Letivo</label>
             <input type="month" name="mes1" id="mes">
         </p>
     </div>
 
     <div>
-        <p>
+        <p> <!--SELETOR DE DIA/MES/ANO-->
             <label for="Dia">Dia da Prova</label>
             <input type="date" name="Dia1" id="Dia">
         </p>
     </div>
 
-    <div>
+    <div> <!--SELETOR DE HORA-->
         <label for="Hora">Horario da Prova</label>
         <input type="time" name="Hora1" id="Hora">
     </div>
     
     <div>
-        <p>
+        <p> <!--BOTÕES DE ENVIAR E LIMPAR-->
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>

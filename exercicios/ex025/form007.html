@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário e ainda mais e mais botões</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <div>
+            <label for="Estate">Estado</label>
+            <select name="1Estate" id="Estate">Estado
+                 
+                    <!--OPTGROUPT para criar uma
+                     "categoria" 
+                     dentro da lista de seleção-->
+                <optgroup label="Norte"></optgroup>
+                    <option value="AC">Acre</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="PA">Pará</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="TO">Tocantins</option>
+                </optgroup>
+                <optgroup label="Nordeste">
+                    <option value="AL">Alagoas</option>
+                    <option value="BA" selected>Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="SE">Sergipe</option>
+                </optgroup>
+                <optgroup label="Centro-Oeste">
+                    <option value="DF">Distrito Federal</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                </optgroup>
+                <optgroup label="Sudeste">
+                    <option value="ES">Espírito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+            </select>
+        </div>        
+
+        <div>
+            <label for="Job">Profissão</label>
+            <input type="text" name="1Job" id="Job" list="JobList" style="margin: 5px;">
+            <datalist id="JobList" > 
+                <!--data list com option dentro cria caixa de seleção-->
+                <option value="ADM">Administrador</option>
+                <option value="DEV" selected>Desenvolvedor</option>    
+                <option value="ENG">Engenharia</option> 
+                <option value="MED">Médico</option>
+                <option value="PROF">Professor</option>
+                <option value="DES">Designer</option>
+                <option value="JUR">Jurista</option>
+                <option value="VET">Veterinário</option>
+                <option value="REP">Representante</option>
+            </datalist>
+        </div>
+        <div>
+            <label for="Msg">Mensagem</label>
+            <textarea name="1Msg" id="Msg"  style="width: 250px;"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
