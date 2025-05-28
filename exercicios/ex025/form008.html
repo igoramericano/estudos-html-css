@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        
+
+        <div>
+            <label for="Num">Número 1:</label>
+            <input type="number" name="1Num" id="Num" min="0" max="50" required oninput="soma.innerHTML = Number(Num.value) + Number(Num1.value)" placeholder="0-50"> <br>
+        </div>
+        <div> 
+            <label for="Num1">Número 2:</label>
+            <input type="number" name="2Num" id="Num1" min="1" max="50" required oninput="soma.innerHTML = Number(Num.value) + Number(Num1.value)" placeholder="0-50">
+        </div>
+        <div>
+            <label for="1Soma">Soma:</label>
+            <output name="soma" id="1Soma">0</output>
+        </div>
+
+
+        <div> <!--botões enviar e limpar-->
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
