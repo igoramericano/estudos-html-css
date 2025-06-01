@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/*modelo para media demais medias*/
+/* 
+  Breakpoints típicos:
+
+  - 0px a 600px: Celular
+  - 600px a 1024px: Tablet
+  - 1024px a 1440px: Desktop
+  - 1440px a 1920px: Desktop grande
+  - 1920px ou mais: TV / Telas 4K
+*/
+
+
+@media print {
+    body {
+        background-image: url(../../imagens/back-print.png); /*desnecessário*/
+        font-family: 'Courier New', Courier, monospace;
+        text-align: none;
+        color: #000;
+    }
+
+    main {
+        border: 2px solid #000;
+    }
+
+    main h1 {
+          text-align: none;
+        color: #000;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;} 
+    img#print {display: block;} /*PRINT ATIVO*/     
+    img#desktop {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (max-width: 599px) {
+    body {
+        background-image: url(../../imagens/back-phone.jpg);
+    }
+    img#phone {display: block;} /*CELULAR ATIVO*/
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#desktop {display: none;}
+    img#tv {display: none;}
+    
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    body {
+        background-image: url(../../imagens/back-tablet.jpg); 
+    }
+    img#phone {display: none;}
+    img#tablet {display: block;} /*TABLET ATIVO*/
+    img#print {display: none;}
+    img#desktop {display: none;}
+    img#tv {display: none;}
+}
+@media screen and (min-width: 1025px) and (max-width: 1441px) {
+    body {
+        background-image: url(../../imagens/back-desktop.png);
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#desktop {display: block;} /*DESKTOP ATIVO*/
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 1442px) and (max-width: 1920px) {
+    body {
+        background-image: url(../../imagens/back-pc.png);
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#desktop {display: none;}
+    img#tv {display: block;} /*TV ATIVO*/
+}
+
+@media screen and (min-width: 1921px) {
+    body {
+        background-image: url(../../imagens/back-tv.png);
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#desktop {display: none;}
+    img#tv {display: block;} /*4k ATIVO*/
+}
