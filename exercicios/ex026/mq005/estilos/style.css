@@ -1,15 +1,16 @@
 @charset "UTF-8";
 
+    
+
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
 body, html {
-    background-color: #145A32;
+    background-color: lightgrey;
 }
 
 header {
-    background-color: #196F3D;
-    color: #FFFFFF;
+    background-color: rgb(148, 148, 148);
 }
 
 header h1 {
@@ -17,8 +18,20 @@ header h1 {
     text-align: center;
 }
 
-menu {
+span#burguer {
+    background-color: rgba(128, 128, 128, 0.281);
+    color: #FFFFFF;
+    padding: 10px;
     display: block;
+    text-align: center;
+}
+
+span#burguer:hover {
+    background-color: #117A65;
+}
+
+menu {
+    display: none;
     padding: 0;
     margin: 0;
 }
@@ -34,7 +47,7 @@ menu a {
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    background-color: #196F3D;
+    background-color: darkgray;
     color: #FFFFFF;
     border: 2px solid #145A32;
     border-radius: 2px;
@@ -46,7 +59,7 @@ menu a:hover {
 
 main {
     width: 90vw;
-    background-color: #145A32;
+    background-color: grey;
     margin: auto;
     padding: 10px;
     border-radius: 10px;
