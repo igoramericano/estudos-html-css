@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: column;
+            width: 65vw;
+        
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div> 
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <!--flex direction row é da esquerda pra direita em PT_BR-->
+    <!--flex direction row-reverse são postos da direita pra esquerda -->
+    <!--flex direction column é na vertical, de cima para baixo -->
+    <!--flex direction column-reverse é na vertical, de baixo para cima -->
+
+<!--
+  Eixos (Flexbox):
+  
+    ->flex-direction: row
+     - main-axis (eixo principal): horizontal da esquerda para a direita
+     - cross-axis (eixo cruzado): vertical de cima para baixo
+  
+    ->flex-direction: row-reverse
+     - main-axis: horizontal da direita para a esquerda
+     - cross-axis: vertical de cima para baixo
+  
+    ->flex-direction: column
+     - main-axis: vertical de cima para baixo
+     - cross-axis: horizontal da esquerda para a direita
+
+    ->flex-direction: column-reverse
+     - main-axis: vertical de baixo para cima
+     - cross-axis: horizontal da esquerda para a direita
+-->
+
+
+
+</body>
+</html>
