@@ -8,30 +8,29 @@
         div.container {
             background-color: lightsalmon;
             display: flex;
-            flex-direction: column;
-            width: 65vw;
-            margin-left: 65px;
-        
+            
+            flex-flow: row wrap; 
+            /*flex-flow é o shorthand de 
+            flex-direction & flex-wrap*/
         }
 
         div.item {
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
-            padding: 5px;
-            
+            flex: auto; /*Sobrepõe o item CONTAINER  (que está representado laranja)*/
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div> 
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div> 
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
     </div>
 
     <!--flex direction row é da esquerda pra direita em PT_BR-->
@@ -42,42 +41,27 @@
 <!--
   Eixos (Flexbox):
   
-    ->flex-direction: row
+    ->flex-direction: ROW
+
      - main-axis (eixo principal): horizontal da esquerda para a direita
      - cross-axis (eixo cruzado): vertical de cima para baixo
   
-    ->flex-direction: row-reverse
+    ->flex-direction: ROW-REVERSE
+
      - main-axis: horizontal da direita para a esquerda
      - cross-axis: vertical de cima para baixo
   
-    ->flex-direction: column
+    ->flex-direction: COLUMN
+
      - main-axis: vertical de cima para baixo
      - cross-axis: horizontal da esquerda para a direita
 
-    ->flex-direction: column-reverse
+    ->flex-direction: COLUMN-REVERSE
+
      - main-axis: vertical de baixo para cima
      - cross-axis: horizontal da esquerda para a direita
 -->
 
-<!--
-  flex-wrap: wrap
-
-  1. flex-direction: row
-     - main-axis: horizontal (esquerda → direita)
-     - Itens quebram para baixo (cross-axis)
-
-  2. flex-direction: row-reverse
-     - main-axis: horizontal (direita → esquerda)
-     - Itens quebram para baixo (cross-axis)
-
-  3. flex-direction: column
-     - main-axis: vertical (cima → baixo)
-     - Itens quebram para a direita (cross-axis)
-
-  4. flex-direction: column-reverse
-     - main-axis: vertical (baixo → cima)
-     - Itens quebram para a direita (cross-axis)
--->
 
 
 </body>
