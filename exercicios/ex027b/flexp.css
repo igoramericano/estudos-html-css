@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+main {
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ max-width: 80%;
+}
+
+section {
+    border: 2px solid #000;
+    border-radius: 5px;
+    display: flex;
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+section:nth-child(3) h2 {
+    background-color: #6d28d9;
+}
+
+ul {
+    margin: 0px;
+    
+}
+
+li {
+
+}
+
+.salary {
+    align-items: center;
+}
+h1 {
+    font-size: 1.2em;
+    text-align: justify;
+    background-color: #52525b;
+    color: #fff;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+
+
+}
+
+h2 {
+    font-size: 1.2em;
+    text-align: justify;
+    background-color: #52525b;
+    color: #fff;
+    padding: 10px;
+}
+
+h3 {
+    margin: 20px;
+    font-size: 1.2em;
+    text-align: justify;
+    background-color: #84cc16;
+    color: #fff;
+    padding: 3px;
+    border-radius: 3px;
+}
