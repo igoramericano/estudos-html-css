@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            height: 300px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: end;
+            align-items: baseline;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <!-- 
+  Flexbox: Entendendo justify-content e align-items
+
+  ✅ Conceito-chave:
+  - 'justify-content' alinha os itens no eixo PRINCIPAL
+  - 'align-items' alinha os itens no eixo CRUZADO
+  - O eixo principal depende da propriedade 'flex-direction'
+
+  ▶ Quando usamos 'flex-direction: row' (padrão):
+    - Eixo principal: horizontal (esquerda ↔ direita)
+    - justify-content → alinha HORIZONTALMENTE
+    - align-items     → alinha VERTICALMENTE
+
+  ▶ Quando usamos 'flex-direction: column':
+    - Eixo principal: vertical (cima ↕ baixo)
+    - justify-content → alinha VERTICALMENTE
+    - align-items     → alinha HORIZONTALMENTE
+
+  🧠 Dica:
+    Sempre olhe primeiro para o 'flex-direction' para entender 
+    como 'justify-content' e 'align-items' vão se comportar.
+-->
+
+</body>
+</html>
