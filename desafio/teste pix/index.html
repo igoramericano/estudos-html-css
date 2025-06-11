@@ -1,53 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PIX</title>
+  <meta charset="UTF-8">
+  <title>PIX nada ainda?</title>
   <style>
     body {
-      background-color: #111;
-      color: #00ff88;
-      font-family: monospace;
+      background-color: black;
+      color: #00ff00;
+      font-family: 'Courier New', monospace;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
+      justify-content: center;
       height: 100vh;
-      font-size: 2rem;
+      margin: 0;
     }
 
-    .cursor {
-      display: inline-block;
-      width: 10px;
-      background-color: #00ff88;
-      animation: blink 0.8s infinite;
-      margin-left: 4px;
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #00ff00;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 40px;
+    }
+
+    #msg {
+      font-size: 30px;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #00ff00;
+      width: 0;
+      animation: typing 4s steps(30, end) forwards, blink 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 24ch; }
     }
 
     @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
+      50% { border-color: transparent; }
     }
   </style>
 </head>
 <body>
-
-  <div id="text"></div><div class="cursor"></div>
+  <button onclick="mostrarMensagem()">Cade meu Dinheiro?</button>
+  <div id="msg" style="display:none;">...e o pix nada ainda?</div>
 
   <script>
-    const message = "....e o pix nada ainda?";
-    const textDiv = document.getElementById("text");
-    let index = 0;
-
-    function type() {
-      if (index < message.length) {
-        textDiv.textContent += message.charAt(index);
-        index++;
-        setTimeout(type, 150); // velocidade da digitação
-      }
+    function mostrarMensagem() {
+      const msg = document.getElementById('msg');
+      msg.style.display = 'block';
     }
-
-    window.onload = type;
   </script>
 </body>
 </html>
