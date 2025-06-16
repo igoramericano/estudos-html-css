@@ -11,8 +11,10 @@
 body {
     font-size: 1em;
     background-color: lightgrey;
-    height: 95vh;
-    width: 95vw;
+    height: 98vh;
+    width: 98vw;
+    margin: 10px;
+    padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -34,8 +36,12 @@ header {
     margin: 10px;
 }
 
-main {
 
+
+
+article {
+    font-size: 1.2em;
+    font-weight: 600;
     background-color: #fff;
     margin: 10px;
 
@@ -46,14 +52,17 @@ main {
 header > h1 {
 
     border: 1px solid black;
+    border-radius: 5px;
     color: #000000;
     flex: 0 0 200px;
+    text-shadow: 2px 2px 0px rgb(255, 255, 255);
     
 }
 
 nav {
 
    border: 1px solid black; 
+   border-radius: 5px;
    display: flex;
 
    gap: 5px;
