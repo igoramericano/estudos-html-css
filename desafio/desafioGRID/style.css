@@ -1,0 +1,90 @@
+/* --- Reset Básico e Estilo do Corpo --- */
+body {
+    margin: 0;
+    padding: 8px; /* Adiciona um pequeno espaçamento nas bordas */
+    font-family: sans-serif;
+    background-color: #001f5c; /* Fundo azul escuro similar ao da imagem */
+    color: #333;
+}
+
+/* --- Estilo Base para as Caixas (para não repetir código) --- */
+.caixa {
+    background-color: #d4b886; /* Cor dourada/bege similar à da imagem */
+    border: 3px dashed rgba(255, 255, 255, 0.8); /* Borda tracejada branca */
+    padding: 20px;
+    box-sizing: border-box; /* Garante que padding e borda não alterem a largura final */
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* --- Layout Principal --- */
+
+/* Topo */
+#topo {
+    min-height: 100px;
+    margin-bottom: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+}
+
+/* --- ESTILOS DO MENU ATUALIZADOS --- */
+#menu {
+    min-height: 50px;
+    margin-bottom: 8px;
+    padding: 10px; /* Ajuste no padding para alinhar melhor os botões */
+    display: flex; /* Usamos flex para centralizar a lista de botões */
+    justify-content: center;
+    align-items: center;
+}
+
+#menu ul {
+    list-style: none; /* Remove os marcadores (bolinhas) da lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Coloca os itens da lista (os botões) lado a lado */
+    gap: 15px; /* Cria um espaço entre os botões */
+}
+
+#menu a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #ffffff;
+    background-color: #002d84; /* Cor de fundo para os botões */
+    padding: 10px 20px;
+    border-radius: 5px; /* Bordas arredondadas */
+    border: 1px solid #ffffff;
+    display: block; /* Garante que o padding seja aplicado corretamente */
+    transition: background-color 0.3s; /* Efeito suave ao passar o mouse */
+}
+
+#menu a:hover {
+    background-color: #0043c4; /* Muda a cor ao passar o mouse */
+}
+/* --- FIM DOS ESTILOS DO MENU --- */
+
+
+/* Container para a área principal e secundária */
+#container {
+    display: flex; /* Ativa o Flexbox */
+    gap: 8px; /* Espaçamento entre a área principal e a secundária */
+    margin-bottom: 8px;
+}
+
+/* Área Principal */
+#principal {
+    flex: 3; /* Faz a área principal ocupar 3 partes do espaço */
+    min-height: 400px;
+}
+
+/* Barra Lateral Secundária */
+#secundario {
+    flex: 1; /* Faz a área secundária ocupar 1 parte do espaço */
+    min-height: 400px;
+}
+
+/* Rodapé */
+#rodape {
+    min-height: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+}
