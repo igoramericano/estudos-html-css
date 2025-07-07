@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+        body {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            border: 1px solid black;
+            padding: 5px;
+            gap: 10px;
+        }
+
+        h1 {
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+
+        p {
+            grid-column: span 2;
+            padding: 10px;
+            place-content: center;
+            place-items: center;
+        }
+        
+    </style>
+    <title>Grid Layout</title>
+</head>
+<body>
+    <h1>Grid Layout parte 3</h1>
+    <p>Grid-auto-columns e grid-auto-rows são propriedades do CSS Grid Layout que permitem definir o tamanho automático das colunas e linhas quando o conteúdo excede o espaço disponível.</p>
+    <p>Grid-auto-columns define o tamanho automático das colunas </p>
+    <p>Grid-auto-rows define o tamanho automático das linhas </p>
+    <p>Grid-auto-columns e grid-auto-rows são úteis para criar layouts responsivos, onde o tamanho das colunas e linhas se ajusta automaticamente com base no conteúdo.</p>
+
+    <p>Grid Layout parte 4</p>
+    <p>grid template columns serve para dividir as colunas em frações</p>
+    <p>grid template rows serve para dividir as linhas em frações</p>
+</body>
+</html>

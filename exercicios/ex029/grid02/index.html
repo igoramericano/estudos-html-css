@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout na prática</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+
+            margin: 5px;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            
+        }
+
+        div.container {
+            border: 2px solid black;
+            display: grid;
+            grid-template-rows: auto auto auto;
+            grid-template-columns: auto auto auto;
+            place-items: normal normal;
+            place-content: normal normal;
+            gap: 5px; 
+            height: 250px;
+            width: auto;
+        }
+
+        div.item {
+            border: 2px solid blue;
+            padding: 5px;
+            text-align: center;
+            background-color: lightblue;
+            font-size: 1.5em;
+            place-items: center center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+    </div>
+</body>
+</html>
