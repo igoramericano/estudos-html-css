@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendário 2026 - Igor</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f0f2f5; padding: 20px; }
+        .calendario-wrapper { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
+        
+        table { border-collapse: collapse; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; }
+        caption { font-size: 1.4em; font-weight: bold; padding: 15px; color: #333; }
+        
+        th { background-color: #2c3e50; color: #fff; padding: 12px; width: 45px; }
+        td { border: 1px solid #eee; padding: 12px; text-align: center; color: #444; }
+
+        /* Estilos de Marcação */
+        .feriado { background-color: #ff7675; color: white; font-weight: bold; }
+        .aniversario { background-color: #74b9ff; color: white; font-weight: bold; border-radius: 50%; }
+    </style>
+</head>
+<body>
+
+<div class="calendario-wrapper">
+
+    <table>
+        <caption>Março</caption>
+        <thead>
+            <tr><th>D</th><th>S</th><th>T</th><th>Q</th><th>Q</th><th>S</th><th>S</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+            <tr><td>8</td><td>9</td><td class="aniversario" title="Meu Aniversário!">10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+            <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+            <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+            <tr><td class="feriado" title="Aniversário de Salvador">29</td><td>30</td><td>31</td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+
+    <table>
+        <caption>Abril</caption>
+        <thead>
+            <tr><th>D</th><th>S</th><th>T</th><th>Q</th><th>Q</th><th>S</th><th>S</th></tr>
+        </thead>
+        <tbody>
+            <tr><td></td><td></td><td></td><td>1</td><td>2</td><td class="feriado" title="Sexta-feira Santa">3</td><td>4</td></tr>
+            <tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr>
+            <tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr>
+            <tr><td>19</td><td>20</td><td class="feriado" title="Tiradentes">21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr>
+            <tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td></td><td></td></tr>
+        </tbody>
+    </table>
+
+    <table>
+        <caption>Maio</caption>
+        <thead>
+            <tr><th>D</th><th>S</th><th>T</th><th>Q</th><th>Q</th><th>S</th><th>S</th></tr>
+        </thead>
+        <tbody>
+            <tr><td></td><td></td><td></td><td></td><td></td><td class="feriado" title="Dia do Trabalhador">1</td><td>2</td></tr>
+            <tr><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr>
+            <tr><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td></tr>
+            <tr><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td></tr>
+            <tr><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td></tr>
+            <tr><td>31</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+
+</div>
+
+</body>
+</html>
