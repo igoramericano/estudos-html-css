@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Igor</title>
+    <style>
+        /* Variáveis com a paleta da imagem */
+        :root {
+            --cor-fundo: #EAFFF0;    /* Verde quase branco */
+            --cor-suave: #A3DFD2;    /* Verde água claro */
+            --cor-destaque: #61CEB2; /* Verde menta vibrante */
+            --cor-secundaria: #51938A; /* Verde azulado médio */
+            --cor-texto: #2E484B;    /* Verde floresta escuro */
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--cor-texto);
+            color: var(--cor-fundo);
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        /* Layout principal */
+        .container {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 2rem;
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            flex: 1;
+        }
+
+        /* Seção de Soft Skills */
+        section {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(46, 72, 75, 0.1);
+        }
+
+        h2 {
+            color: var(--cor-secundaria);
+            border-bottom: 3px solid var(--cor-suave);
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-item {
+            background: var(--cor-fundo);
+            padding: 1rem;
+            border-left: 5px solid var(--cor-destaque);
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        /* Aside */
+        aside {
+            background-color: var(--cor-secundaria);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            align-self: start;
+        }
+
+        aside h3 {
+            margin-top: 0;
+            color: var(--cor-fundo);
+        }
+
+        aside a {
+            color: var(--cor-suave);
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+            transition: color 0.3s;
+        }
+
+        aside a:hover {
+            color: var(--cor-fundo);
+            text-decoration: underline;
+        }
+
+        /* Botões */
+        .btn-container {
+            margin-top: 2rem;
+        }
+
+        button {
+            background-color: var(--cor-destaque);
+            color: var(--cor-texto);
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.3s;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: var(--cor-suave);
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--cor-texto);
+            color: var(--cor-suave);
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Igor</h1>
+        <p>Desenvolvedor focado em soluções práticas e eficientes</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Minhas Soft Skills</h2>
+            <p>Além das competências técnicas, foco em comportamentos que impulsionam o trabalho em equipe e a entrega de valor:</p>
+            
+            <div class="skill-grid">
+                <div class="skill-item">Comunicação Assertiva</div>
+                <div class="skill-item">Resiliência e Adaptação</div>
+                <div class="skill-item">Pensamento Analítico</div>
+                <div class="skill-item">Trabalho em Equipe</div>
+                <div class="skill-item">Gestão de Tempo</div>
+                <div class="skill-item">Resolução de Problemas</div>
+            </div>
+
+            <div class="btn-container">
+                <button onclick="window.location.href='https://github.com/igoramericano'">Ver GitHub</button>
+                <button style="background: transparent; border: 2px solid var(--cor-destaque);"><a href="https://drive.google.com/file/d/1JYp2afph9EsfIAO2Hh0NTpSgibyYYgyQ/view?usp=sharing">Baixar CV</a></button>
+            </div>
+        </section>
+
+        <aside>
+            <h3>Contato</h3>
+            <p>Vamos conversar sobre novos projetos ou oportunidades.</p>
+            <nav>
+                <a href="mailto:contato@exemplo.com">📧 Email</a>
+                <a href="https://linkedin.com/in/igoramericano">🔗 LinkedIn</a>
+                <a href="https://igoramericano.github.io/portifolio">🌐 Portfólio Web</a>
+            </nav>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Igor - Construído com harmonia visual e foco em resultados.</p>
+    </footer>
+
+</body>
+</html>
