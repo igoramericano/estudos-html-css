@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prova CSS Avançado</title>
+  <style>
+    :root {
+      --tamanho-fonte: 20px;
+      --espacamento: 15px;
+    }
+
+    @media (min-width: 600px) {
+      :root {
+        --tamanho-fonte: 28px;
+        --espacamento: 25px;
+      }
+    }
+
+    @media (min-width: 1000px) {
+      :root {
+        --tamanho-fonte: 40px;
+        --espacamento: 40px;
+      }
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: var(--espacamento);
+      background-color: #f4f4f9;
+    }
+
+    h1 {
+      font-size: var(--tamanho-fonte);
+      margin-bottom: var(--espacamento);
+      color: #333;
+    }
+
+    p {
+      font-size: calc(var(--tamanho-fonte) * 0.6);
+      line-height: 1.5;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Título do Cabeçalho</h1>
+  <p>Este é um parágrafo simples para demonstrar o espaçamento e o ajuste automático baseado nas variáveis CSS aplicadas através das media queries.</p>
+
+</body>
+</html>
