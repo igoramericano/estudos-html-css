@@ -3,144 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Igor</title>
+    <title>Site Harmonioso</title>
     <style>
-        /* Variáveis com a paleta da imagem */
-        :root {
-            --cor-fundo: #EAFFF0;    /* Verde quase branco */
-            --cor-suave: #A3DFD2;    /* Verde água claro */
-            --cor-destaque: #61CEB2; /* Verde menta vibrante */
-            --cor-secundaria: #51938A; /* Verde azulado médio */
-            --cor-texto: #2E484B;    /* Verde floresta escuro */
-        }
-
+        /* Estilização Base */
         body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            line-height: 1.6;
-            background-color: var(--cor-fundo);
-            color: var(--cor-texto);
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
+            background-color: #F4F7F6;
+            color: #2D3436;
+            display: grid;
+            grid-template-areas: 
+                "header header"
+                "section aside"
+                "footer footer";
+            grid-template-columns: 3fr 1fr;
+            gap: 20px;
+            padding: 20px;
         }
 
         /* Header */
         header {
-            background-color: var(--cor-texto);
-            color: var(--cor-fundo);
-            padding: 3rem 1rem;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            letter-spacing: 1px;
-        }
-
-        /* Layout principal */
-        .container {
-            display: grid;
-            grid-template-columns: 3fr 1fr;
-            gap: 2rem;
-            max-width: 1100px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-            flex: 1;
-        }
-
-        /* Seção de Soft Skills */
-        section {
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(46, 72, 75, 0.1);
-        }
-
-        h2 {
-            color: var(--cor-secundaria);
-            border-bottom: 3px solid var(--cor-suave);
-            display: inline-block;
-            margin-bottom: 1.5rem;
-        }
-
-        .skill-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-        }
-
-        .skill-item {
-            background: var(--cor-fundo);
-            padding: 1rem;
-            border-left: 5px solid var(--cor-destaque);
-            border-radius: 4px;
-            font-weight: 500;
-        }
-
-        /* Aside */
-        aside {
-            background-color: var(--cor-secundaria);
+            grid-area: header;
+            background-color: #2C3E50;
             color: white;
             padding: 2rem;
-            border-radius: 12px;
-            align-self: start;
+            text-align: center;
+            border-radius: 8px;
         }
 
-        aside h3 {
-            margin-top: 0;
-            color: var(--cor-fundo);
+        /* Conteúdo Principal */
+        section {
+            grid-area: section;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        /* Barra Lateral */
+        aside {
+            grid-area: aside;
+            background-color: #F39C12;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
         }
 
         aside a {
-            color: var(--cor-suave);
-            text-decoration: none;
+            color: white;
             display: block;
-            margin: 10px 0;
-            transition: color 0.3s;
+            margin-bottom: 10px;
+            text-decoration: none;
+            font-weight: bold;
         }
 
         aside a:hover {
-            color: var(--cor-fundo);
             text-decoration: underline;
-        }
-
-        /* Botões */
-        .btn-container {
-            margin-top: 2rem;
-        }
-
-        button {
-            background-color: var(--cor-destaque);
-            color: var(--cor-texto);
-            border: none;
-            padding: 0.8rem 1.5rem;
-            font-size: 1rem;
-            font-weight: bold;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: transform 0.2s, background 0.3s;
-            margin-right: 10px;
-        }
-
-        button:hover {
-            background-color: var(--cor-suave);
-            transform: translateY(-2px);
         }
 
         /* Footer */
         footer {
-            background-color: var(--cor-texto);
-            color: var(--cor-suave);
+            grid-area: footer;
+            background-color: #2C3E50;
+            color: #bdc3c7;
             text-align: center;
-            padding: 1.5rem;
-            margin-top: 2rem;
+            padding: 1rem;
+            border-radius: 8px;
         }
 
-        /* Mobile */
+        /* Elementos Adicionais */
+        button {
+            background-color: #27AE60;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #219150;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #27AE60;
+            color: #27AE60;
+            margin-left: 10px;
+        }
+
+        .btn-outline:hover {
+            background: #27AE60;
+            color: white;
+        }
+
+        /* Responsividade Simples */
         @media (max-width: 768px) {
-            .container {
+            body {
+                grid-template-areas: 
+                    "header"
+                    "section"
+                    "aside"
+                    "footer";
                 grid-template-columns: 1fr;
             }
         }
@@ -149,43 +115,34 @@
 <body>
 
     <header>
-        <h1>Igor</h1>
-        <p>Desenvolvedor focado em soluções práticas e eficientes</p>
+        <h1>Meu Projeto Harmonioso</h1>
+        <p>Design limpo, moderno e funcional.</p>
     </header>
 
-    <div class="container">
-        <section>
-            <h2>Minhas Soft Skills</h2>
-            <p>Além das competências técnicas, foco em comportamentos que impulsionam o trabalho em equipe e a entrega de valor:</p>
-            
-            <div class="skill-grid">
-                <div class="skill-item">Comunicação Assertiva</div>
-                <div class="skill-item">Resiliência e Adaptação</div>
-                <div class="skill-item">Pensamento Analítico</div>
-                <div class="skill-item">Trabalho em Equipe</div>
-                <div class="skill-item">Gestão de Tempo</div>
-                <div class="skill-item">Resolução de Problemas</div>
-            </div>
+    <section>
+        <h2>Bem-vindo ao Conteúdo Principal</h2>
+        <p>Esta seção utiliza um fundo branco para garantir a legibilidade máxima do texto grafite. Abaixo você encontra exemplos de elementos de interação:</p>
+        
+        <button>Enviar Dados</button>
+        <button class="btn-outline">Saiba Mais</button>
+        
+        <p style="margin-top: 20px;">
+            A harmonia entre o <strong>Azul Ardósia</strong> e o <strong>Âmbar</strong> cria um contraste profissional sem agredir a visão do usuário.
+        </p>
+    </section>
 
-            <div class="btn-container">
-                <button onclick="window.location.href='https://github.com/igoramericano'">Ver GitHub</button>
-                <button style="background: transparent; border: 2px solid var(--cor-destaque);"><a href="https://drive.google.com/file/d/1JYp2afph9EsfIAO2Hh0NTpSgibyYYgyQ/view?usp=sharing">Baixar CV</a></button>
-            </div>
-        </section>
-
-        <aside>
-            <h3>Contato</h3>
-            <p>Vamos conversar sobre novos projetos ou oportunidades.</p>
-            <nav>
-                <a href="mailto:contato@exemplo.com">📧 Email</a>
-                <a href="https://linkedin.com/in/igoramericano">🔗 LinkedIn</a>
-                <a href="https://igoramericano.github.io/portifolio">🌐 Portfólio Web</a>
-            </nav>
-        </aside>
-    </div>
+    <aside>
+        <h3>Links Úteis</h3>
+        <nav>
+            <a href="#">Documentação</a>
+            <a href="#">Configurações</a>
+            <a href="#">Perfil do Usuário</a>
+            <a href="#">Suporte Técnico</a>
+        </nav>
+    </aside>
 
     <footer>
-        <p>&copy; 2026 Igor - Construído com harmonia visual e foco em resultados.</p>
+        <p>&copy; 2026 - Desenvolvido com foco em Harmonia de Cores.</p>
     </footer>
 
 </body>
