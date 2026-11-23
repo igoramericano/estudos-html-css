@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etapa 1 - Flexbox</title>
+    <style>
+        /* Estilização do container principal */
+        .container-flex {
+            display: flex;       /* Ativa o Flexbox para alinhar os itens lado a lado */
+            gap: 15px;          /* Espaçamento entre as caixinhas */
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 2px dashed #ccc;
+        }
+
+        /* Estilização básica das caixinhas (itens) */
+        .item-flex {
+            width: 100px;        /* Tamanho (largura) de cada caixa */
+            height: 100px;       /* Tamanho (altura) de cada caixa */
+            display: flex;
+            align-items: center;  /* Centraliza o texto verticalmente */
+            justify-content: center; /* Centraliza o texto horizontalmente */
+            font-weight: bold;
+            color: white;
+            border-radius: 8px;
+        }
+
+        /* Cores diferentes para cada caixa para visualizar melhor */
+        .item-flex:nth-child(1) { background-color: #ff5733; } /* Vermelho/Laranja */
+        .item-flex:nth-child(2) { background-color: #33ff57; } /* Verde */
+        .item-flex:nth-child(3) { background-color: #3357ff; } /* Azul */
+    </style>
+</head>
+<body>
+
+    <div class="container-flex">
+        <div class="item-flex">Caixa 1</div>
+        <div class="item-flex">Caixa 2</div>
+        <div class="item-flex">Caixa 3</div>
+    </div>
+
+</body>
+</html>
